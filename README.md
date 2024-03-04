@@ -1,10 +1,10 @@
-# sso-grpc-example
+## sso-grpc-example
 
-gRPC:       https://grpc.io/docs/languages/go/quickstart/
-Protobuf:   https://protobuf.dev/getting-started/gotutorial/
-Task:       https://taskfile.dev/installation/
+gRPC:       https://grpc.io/docs/languages/go/quickstart/ .
+Protobuf:   https://protobuf.dev/getting-started/gotutorial/ .
+Task:       https://taskfile.dev/installation/ .
 
-# Usage
+## Usage
 
 Run:
 ```
