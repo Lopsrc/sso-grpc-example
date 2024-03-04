@@ -1,0 +1,10 @@
+
+version: "3"
+
+tasks:
+  migrate-test:
+    aliases:
+      - mgrtst
+    desc: ""
+    cmds:
+      - go run ../cmd/migrator/main.go --storage-path=../storage/sso.db --migrations-path=migrations --migrations-table=migrations_test

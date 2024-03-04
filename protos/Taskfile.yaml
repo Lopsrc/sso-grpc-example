@@ -1,0 +1,16 @@
+# If you got this error  -->  protoc-gen-go: program not found or is not executable
+# Please specify a program using absolute path or make sure the program is available in your PATH system variable
+# --go_out: protoc-gen-go: Plugin failed with status code 1.
+
+# Try run in terminal:
+#   export PATH="$PATH:$(go env GOPATH)/bin"
+
+version: "3"
+
+tasks:
+  generate:
+    aliases:
+      - gen
+    desc: "Generate code from proto files"
+    cmds:
+      - protoc -I proto proto/sso/sso.proto --go_out=./gen/go/ --go_opt=paths=source_relative --go-grpc_out=./gen/go/ --go-grpc_opt=paths=source_relative

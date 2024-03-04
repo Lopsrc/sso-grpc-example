@@ -1,0 +1,10 @@
+
+version: "3"
+
+tasks:
+  migrate:
+    aliases:
+      - mgrt
+    desc: ""
+    cmds:
+      - go run cmd/migrator/main.go --storage-path=storage/sso.db --migrations-path=migrations
